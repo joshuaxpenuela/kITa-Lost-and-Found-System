@@ -1,0 +1,123 @@
+.table-scroll-wrapper {
+    position: relative;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+}
+.table-scroll-header {
+    position: relative;
+    background-color: #f8f9fa;
+}
+.table-scroll-header table {
+    margin-bottom: 0;
+}
+.table-scroll-header th {
+    border-top: none;
+    border-bottom: 2px solid #dee2e6;
+    background-color: #f8f9fa;
+    padding: 1rem;
+}
+.table-scroll-body {
+    max-height: 300px;
+    overflow-y: auto;
+}
+/* Consistent borders */
+.table-scroll-body table {
+    margin-bottom: 0;
+    border: none;
+}
+.table-scroll-body td {
+    border-left: none;
+    border-right: none;
+}
+.table-scroll-body tr:last-child td {
+    border-bottom: none;
+}
+/* Remove double borders */
+.table-scroll-header table,
+.table-scroll-body table {
+    border: none;
+}
+.table th:first-child,
+.table td:first-child {
+    border-left: none;
+}
+.table th:last-child,
+.table td:last-child {
+    border-right: none;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.table-scroll-body::-webkit-scrollbar {
+    width: 8px;
+}
+.table-scroll-body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+.table-scroll-body::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+/* Fixed width columns for better alignment */
+.table th:nth-child(1),
+.table td:nth-child(1) {
+    width: 20%;
+}
+.table th:nth-child(2),
+.table td:nth-child(2) {
+    width: 35%;
+}
+.table th:nth-child(3),
+.table td:nth-child(3) {
+    width: 25%;
+}
+.table th:nth-child(4),
+.table td:nth-child(4) {
+    width: 20%;
+}
+/* Ensure consistent cell padding */
+.table th,
+.table td {
+    padding: 1rem;
+    vertical-align: middle;
+}
+/* Hover effect */
+.table-hover tbody tr:hover {
+    background-color: rgba(0,0,0,.075);
+}
+/* Images in table */
+.table img.img-thumbnail {
+    max-width: 100px;
+    margin-bottom: 0.5rem;
+}
+.table img.img-thumbnail:last-child {
+    margin-bottom: 0;
+}
+/* Action buttons */
+.table .btn {
+    padding: 0.375rem 0.75rem;
+}
+.table .btn:last-child {
+    margin-bottom: 0;
+}
+.proof-image {
+    cursor: pointer;
+    transition: transform 0.2s;
+    max-width: 80px;
+    height: auto;
+}
+.proof-image:hover {
+    transform: scale(1.05);
+}
+.modal-body img {
+    max-width: 100%;
+    height: auto;
+}
+.image-container {
+    margin: 5px;
+    display: inline-block;
+}
+.image-label {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.8rem;
+    color: #666;
+}
