@@ -40,7 +40,7 @@ if ($result->num_rows > 0) {
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
         $mail->Username = 'kitak2450@gmail.com';
-        $mail->Password = 'nrhhlphbnfpswsve';
+        $mail->Password = 'xgtuuhutxzovmofa';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port = 465;
 
